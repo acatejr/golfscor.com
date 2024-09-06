@@ -17,7 +17,9 @@ defmodule GolfscorWeb.Router do
   scope "/", GolfscorWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", PageController, :index
+    get "/home", PageController, :home
+
   end
 
   # Other scopes may use custom stacks.
